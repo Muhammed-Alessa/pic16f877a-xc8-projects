@@ -11,16 +11,17 @@
 #define _XTAL_FREQ 4000000
 void main(void) {
 
-    TRISBbits.TRISB0=0; //set as output
-    TRISBbits.TRISB1=0; //set as input
-    TRISAbits.TRISA1=1;
+    TRISBbits.TRISB0=0; //set LED pin as output
+    TRISBbits.TRISB1=1; //set Button as input
+
    
     for (;;) {
         
-        PORTBbits.RB0=1;
-        __delay_ms(500);
-        PORTBbits.RB0=0;
-        __delay_ms(500);
+        if (PORTBbits.RB1) {
+            PORTBbits.RB0=1;
+        } else {               
+            PORTBbits.RB0=0;
+        }
     
     }
     

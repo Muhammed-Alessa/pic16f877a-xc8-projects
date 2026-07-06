@@ -1891,18 +1891,18 @@ extern __bank0 __bit __timeout;
 void main(void) {
 
     TRISBbits.TRISB0=0;
-    TRISBbits.TRISB1=0;
-    TRISAbits.TRISA1=1;
+    TRISBbits.TRISB1=1;
+
 
     for (;;) {
 
-        PORTBbits.RB0=1;
-        _delay((unsigned long)((500)*(4000000/4000.0)));
-        PORTBbits.RB0=0;
-        _delay((unsigned long)((500)*(4000000/4000.0)));
+        if (PORTBbits.RB1) {
+            PORTBbits.RB0=1;
+        } else {
+            PORTBbits.RB0=0;
+        }
 
     }
-
 
     return;
 }
