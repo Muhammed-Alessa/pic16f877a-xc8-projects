@@ -9,7 +9,6 @@ Target setup:
 - **Programmer:** PICkit 3
 - **Clock used by these projects:** 4 MHz external crystal
 
-The descriptions and source files here are independently rewritten for this repository. They are not copied from the course.
 
 ## Repository Structure
 
