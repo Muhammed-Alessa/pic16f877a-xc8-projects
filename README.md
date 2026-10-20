@@ -1,7 +1,6 @@
 # PIC16F877A XC8 Projects
 
-A GitHub portfolio built from the practical LAB/project sequence of Khaled Magdy's **Embedded Systems Course - PIC Microcontrollers Tutorials [Arabic]**.
-
+A GitHub portfolio built from practical LAB/project PIC microcontroller.
 Target setup:
 
 - **MCU:** PIC16F877A
@@ -22,11 +21,7 @@ Project XX - Project Name/
     └── .gitkeep
 ```
 
-After rebuilding a project on real hardware, add your own photo as:
 
-```text
-images/breadboard.jpg
-```
 
 ## Projects
 
@@ -57,8 +52,8 @@ images/breadboard.jpg
 
 ## Notes
 
-- The repository focuses on the **practical LABs and interfacing projects** from the playlist rather than creating folders for purely theoretical lessons.
+- The repository focuses on the **practical LABs and interfacing projects**
 - PIC16F877A configuration bits are kept directly inside each `main.c` to preserve the simple two-file-per-project style.
 - The ADC/DAC portion follows the later lessons in the same playlist. Because PIC16F877A has no internal DAC module, the DAC projects use an external **8-bit R-2R resistor ladder**, matching the course concept.
 - The UART and SPI two-MCU projects use one `main.c` with a compile-time role setting so the project folder stays simple.
-- No course circuit images are included. Add your own Proteus screenshot or, preferably, your own real breadboard photo after testing.
+
