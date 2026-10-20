@@ -1,6 +1,7 @@
 # PIC16F877A XC8 Projects
 
 A GitHub portfolio built from practical LAB/project PIC microcontroller.
+
 Target setup:
 
 - **MCU:** PIC16F877A
